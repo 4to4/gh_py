@@ -1,0 +1,6 @@
+str1 = '19yrs of experience in managing, leading, building, apps, services, teams in finance infrastructure for broker dealer services, tri-party repo, hedge funds and deployment etc. •	Strong management, prioritization, planning, architectural skills in the field of product management, product development, relationship mgmt., team mgmt. etc. •	Built, enhanced and managed many critical milestone financial and infrastructure services e.g. credit monitoring, market/security reference data, trade mgmt., global deployment •	Specialized in modernization/consolidation, technology mgmt., outsourcing and cost savings for medium/large critical applications on various platforms. •	Thorough at managing resources, risk, delivery, cost and product management. in modern. •	Exceptional blend of hard and soft skills ranging from process methodology to risk mgmt., learning agility team building and interpersonal effectiveness. •	Managed and mentored teams, acquired hands on leadership and management skills and grown into an adept, goal oriented management professional in last 12 years. •	Self-taught tri-party repo, prime brokerage, hedge funds, merchant services, software deployment businesses and acquired in depth business and technical knowledge.'.split()
+
+print(type(str1))
+
+for s in str1:
+    print(f"{s} => {str1.count(s)}")
