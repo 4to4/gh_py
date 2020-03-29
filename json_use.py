@@ -16,6 +16,7 @@ js = '''
     ]
 }'''
 
+
 # json.loads function
 data = json.loads(js) # 1. To load the files
 #2. lists get converted to arrays, null to None, Str - string, whole thing to dict.
@@ -25,10 +26,12 @@ print(data)
 for p in data['people']:
     print(f"P -> {p}")
 
+# dump() is used to write to a file
+# dumps() is used to write to a string and use it later.
+
 #dumping json
 for p in data['people']:
     del p['first-name']
-
 
 # json.dumps function - s string 
 jstr = json.dumps(data, indent=2) # here 2 is number of indention - make it easy to read
