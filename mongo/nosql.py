@@ -27,11 +27,24 @@ def main():
     log = logging.getLogger(__name__)
 
     #global config
-    dbh='localhost:27017'
+    dbh='mongodb://localhost:27017/'
     db='business'
     dbo = get_dbo(db=db, dbh=dbh)
-    assert dbo is None, "Exiting"
+    # assert dbo is None, "Exiting"
     pprint(dbo.command("serverStatus"))
+
+    # insert a row
+    mydict = { "name": "Peter", "address": "Lowstreet 27" }
+    x = dbo[db].insert_one(mydict)
+    print(x.inserted_id)
+
+    # find a row
+    for x in dbo[db].find():
+        print(x)
+
+    
+    
+
 
 
 if __name__ == "__main__":
