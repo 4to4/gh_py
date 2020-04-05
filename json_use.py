@@ -4,12 +4,12 @@ js = '''
 {
     "people": [
         {
-            "first-name": "Jane", 
-            "last-name": "Roe", 
+            "first-name": "Jane",
+            "last-name": "Roe",
             "email2": "jane.roe@example.com"
-        }, 
+        },
         {
-            "first-name": "John", 
+            "first-name": "John",
             "email2": "john.doe@example.com",
             "last-name": null
         }
@@ -20,6 +20,7 @@ js = '''
 # json.loads function
 data = json.loads(js) # 1. To load the files
 #2. lists get converted to arrays, null to None, Str - string, whole thing to dict.
+
 print(data)
 
 # iterating through
@@ -33,7 +34,7 @@ for p in data['people']:
 for p in data['people']:
     del p['first-name']
 
-# json.dumps function - s string 
+# json.dumps function - s string
 jstr = json.dumps(data, indent=2) # here 2 is number of indention - make it easy to read
 print(jstr)
 
@@ -47,7 +48,7 @@ with open(r'D:\dev\large_dataset\rows.json', encoding='utf-8') as f:
     data = json.load(f)
 
 # print(data)
-# similarly the dump function 
+# similarly the dump function
 
 with open('output_file', 'w', encoding='utf-8') as f:
     json.dump(data,f)
