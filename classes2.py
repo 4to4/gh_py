@@ -22,10 +22,7 @@ co2 = Student()
 co2.st(name="Nm22", id=14)
 co.get_full_name()
 
-common_name, name and id are treated as static variables.
-
-Here
-
+"""common_name, name and id are treated as static variables. Here
 class Student:
     common_name = None
 #    name = None
@@ -49,11 +46,11 @@ print("------------------")
 co2 = Student()
 co2.st(name="Nm22", id=14)
 co.get_full_name()
+"""
 
-Even though name and id are getting declared implicitly they are not static variables.
-Basically you can keep declaring the variable with self. in class method bodies and keep using them.
-But if you declare them explicitly in class body then they are treated as static vars and can be accessed directly with class object
-
+# Even though name and id are getting declared implicitly they are not static variables.
+# Basically you can keep declaring the variable with self. in class method bodies and keep using them.
+# But if you declare them explicitly in class body then they are treated as static vars and can be accessed directly with class object
 
 
 # super() method is used to called parent class methods

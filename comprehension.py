@@ -59,31 +59,37 @@ print(person.get("d", "Unknown")) # This will return Unknown because second argu
 print(person.get("name", "Unknown")) # this will return phill since name is a valid key
 print(person.get('X')) #This will return None since the key does not exist
 
-
 print("Nested functions!!!!!")
+
+
 # Nested functions # not really useful
 def ofunc():
     student = ["a", "b"]
     for i in student:
         print(i)
+
     def ifunc():
         print(student)
-    ifunc() # nothing this is being called from outter function. 
-   
-ofunc()
-# this will print 
-a
-b
-from inside ['a', 'b']
 
+    ifunc()  # nothing this is being called from outter function.
+
+
+ofunc()
+
+
+# this will print
+# a
+# b
+# from inside ['a', 'b']
 
 
 # lambda functions
-#Anonymous functions, for throw away purposes
+# Anonymous functions, for throw away purposes
 
-#regular functions
+# regular functions
 def double(x):
     return x * 2
+
 
 double(2)
 
@@ -102,19 +108,19 @@ print(type(double))
 #generate list of numbers divisible by 3
 
 div3 = lambda x: not (x % 9)
-list = list(filter(div3, range(1,100)))
+list = list(filter(div3, range(1, 100)))
 print(list)
-
 
 # perl map is same as python map function
 # and usually together with lambda e.g.
 # Unlike perl python returns map object, which has to be converted
 # into list or set or some other iterable structure
 
-a_list = [1,2,3,4,5,]
-m_list = map( lambda x: x*2, a_list)
+a_list = [1, 2, 3, 4, 5, ]
+m_list = map(lambda x: x * 2, a_list)
+result = map(lambda x: x * x, a_list)
 # map object to list conversion - must be done
-print(list(m_list))
+new_list = set(result)
+print(result)
 
 # output will be  => [2, 4, 6, 8, 10]
-
