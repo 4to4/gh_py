@@ -71,7 +71,7 @@ def ofunc():
     def ifunc():
         print(student)
 
-    ifunc()  # nothing this is being called from outter function.
+    ifunc()  # note this is being called from outter function.
 
 
 ofunc()
@@ -120,7 +120,7 @@ a_list = [1, 2, 3, 4, 5, ]
 m_list = map(lambda x: x * 2, a_list)
 result = map(lambda x: x * x, a_list)
 # map object to list conversion - must be done
-new_list = set(result)
+# new_list = set(result)
 print(result)
 
 # output will be  => [2, 4, 6, 8, 10]
